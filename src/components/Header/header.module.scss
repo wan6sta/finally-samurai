@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: aquamarine;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.logo {
+
+  a {
+    font-size: 28px;
+  }
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  & .login {
+    text-align: center;
+    width: 80px;
+
+    &Inner {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      & img {
+        width: 32px;
+      }
+    }
+  }
+}

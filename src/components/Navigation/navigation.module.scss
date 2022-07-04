@@ -1,0 +1,19 @@
+.navigation {
+
+}
+
+.row {
+
+}
+
+.nav {
+ display: flex;
+ flex-direction: column;
+ & a {
+   padding: 5px;
+  transition: 0.2s ease-in;
+ }
+ .focus {
+  background-color: aquamarine;
+ }
+}
