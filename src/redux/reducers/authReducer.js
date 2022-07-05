@@ -102,3 +102,25 @@ export const putStatus = (status) => async (dispatch) => {
     console.error(e.message)
   }
 }
+
+export const logOut = () => async (dispatch) => {
+  try {
+    await axiosMain.delete('/auth/login')
+  } catch (e) {
+    console.error(e.message)
+  }
+}
+
+export const login = (email, password, rememberMe, captcha) => async (dispatch) => {
+  try {
+    const login = await axiosMain.post('/auth/login', {
+      email,
+      password,
+      rememberMe,
+      captcha
+    })
+    console.log(login)
+  } catch (e) {
+    console.error(e.message)
+  }
+}

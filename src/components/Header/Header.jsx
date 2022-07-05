@@ -4,7 +4,7 @@ import userIcon from '../../assets/images/profile.png'
 import {Link} from 'react-router-dom'
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
-import {getProfile, getProfileInfo} from "../../redux/reducers/authReducer";
+import {getProfile, getProfileInfo, logOut} from "../../redux/reducers/authReducer";
 import LoadingMain from "../Loading/LoadingMain";
 
 const Header = () => {
@@ -43,6 +43,8 @@ const Header = () => {
                         ? profileInfo.photos.small
                         : userIcon} alt="ava"/>
                     {login}
+
+                    <button onClick={() => dispatch(logOut())}>Log out</button>
                   </div>
                   : <Link to='login'>Login</Link>
               }

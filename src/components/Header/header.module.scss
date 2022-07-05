@@ -34,7 +34,18 @@
       display: flex;
       align-items: center;
       column-gap: 10px;
-
+      width: 200px;
+      & button {
+        opacity: 0.9;
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff;
+        background-color: #f55454;
+        padding:0 5px;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
       & img {
         width: 32px;
       }

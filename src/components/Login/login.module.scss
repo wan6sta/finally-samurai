@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  & input {
+    background-color: aquamarine;
+    padding: 5px;
+    font-size: 20px;
+    &::placeholder {
+      font-size: 16px;
+      color: #424242;
+    }
+  }
+  & label {
+    user-select: none;
+  }
+  & button {
+    padding: 5px;
+    user-select: none;
+    transition: 0.2s ease-in;
+    &:hover {
+      background-color: #f55454;
+    }
+}
+}

@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Profile from "./components/Profile/Profile";
 import Messages from "./components/Messages/Messages";
 import Users from "./components/Users/Users";
+import Login from "./components/Login/Login";
 
 const App = () => {
   return <>
@@ -21,7 +22,7 @@ const App = () => {
 
           <Route path='settings' element={<h1>Settings</h1>}/>
 
-          <Route path='login' element={<h1>Login</h1>}/>
+          <Route path='login' element={<Login/>}/>
         </Routes>
       </div>
     </div>
