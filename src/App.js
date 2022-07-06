@@ -6,6 +6,7 @@ import Profile from "./components/Profile/Profile";
 import Messages from "./components/Messages/Messages";
 import Users from "./components/Users/Users";
 import Login from "./components/Login/Login";
+import Test from "./components/Test/Test";
 
 const App = () => {
   return <>
@@ -23,6 +24,8 @@ const App = () => {
           <Route path='settings' element={<h1>Settings</h1>}/>
 
           <Route path='login' element={<Login/>}/>
+
+          <Route path='test' element={<Test/>}/>
         </Routes>
       </div>
     </div>
